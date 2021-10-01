@@ -1,12 +1,8 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
-// Input your word in the "" then run the program!
-// The letters MUST be in lowercase.
-string word = "";
-unsigned long length = word.size();
-vector<char> lines(length, '_');
+string word;
+vector<char> lines;
 const string manBodyParts[6] = {"  o", "\n-", " |", " -", "\n /", " \\"};
 int chances = 6;
 
@@ -25,17 +21,18 @@ void printMan() {
 }
 
 int main() {
-    if (length == 0) {
-        printf("Please input your word first to start the game!\n");
-        return 0;
-    }
-    
+    (void)scanf(%s, &word);
+
+    unsigned long length = word.size();
+    line = vector<char>(length, '_');
+
     char letter;
+
     printf("The word has %lu letters.\nFill in the blanks (one letter at a time for better experiences) before the whole Hangman appears on the screen (6 chances: 1 head, 2 arms, 1 body, 2 legs):\n", length);
     
     vector<char> typedLetters;
     while (chances > 0) {
-        scanf("%c", &letter);
+        (void)scanf("%c", &letter);
         if (letter == '\n') continue;
         bool cheat = false;
         for (char c : typedLetters) {
