@@ -23,6 +23,8 @@ void printMan() {
 int main() {
     (void)!scanf(%s, &word);
 
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+
     unsigned long length = word.size();
     line = vector<char>(length, '_');
 
