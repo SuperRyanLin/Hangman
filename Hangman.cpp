@@ -21,7 +21,7 @@ void printMan() {
 }
 
 int main() {
-    (void)scanf(%s, &word);
+    (void)!scanf(%s, &word);
 
     unsigned long length = word.size();
     line = vector<char>(length, '_');
@@ -32,7 +32,7 @@ int main() {
     
     vector<char> typedLetters;
     while (chances > 0) {
-        (void)scanf("%c", &letter);
+        (void)!scanf("%c", &letter);
         if (letter == '\n') continue;
         bool cheat = false;
         for (char c : typedLetters) {
