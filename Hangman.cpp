@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+char rawword[100];
 string word;
 vector<char> lines;
 const string manBodyParts[6] = {"  o", "\n-", " |", " -", "\n /", " \\"};
@@ -21,12 +22,13 @@ void printMan() {
 }
 
 int main() {
-    (void)!scanf(%s, &word);
+    (void)!scanf("%s", rawword);
+    word = rawword;
 
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 
     unsigned long length = word.size();
-    line = vector<char>(length, '_');
+    lines = vector<char>(length, '_');
 
     char letter;
 
