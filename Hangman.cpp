@@ -41,7 +41,7 @@ int main() {
         bool cheat = false;
         for (char c : typedLetters) {
             if (letter == c) {
-                printf("You've tried this letter already. Are you trying to break this program or you litterally forgot which letters you've already tried?\nAs a punishment, you lose 2 chances. Have fun hacking... LOL\n");
+                printf("You've tried this letter already. Are you trying to break this program or you literally forgot which letters you've already tried?\nAs a punishment, you lose 2 chances. Have fun hacking... LOL\n");
                 chances -= 2;
                 printMan();
                 cheat = true;
